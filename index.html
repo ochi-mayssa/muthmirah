@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06152f">
+    <title>Muthmirah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #06152f;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        main {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 30px 20px;
+        }
+
+        .homepage-image {
+            display: block;
+            width: min(78%, 1000px);
+            height: auto;
+            max-height: 72vh;
+            object-fit: contain;
+        }
+
+        .contact {
+            font-size: 15px;
+            color: #dbe7f7;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                gap: 18px;
+                padding: 20px 12px;
+            }
+
+            .homepage-image {
+                width: 94%;
+                max-height: 72vh;
+            }
+
+            .contact {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <img
+            src="assets/muthmirah-homepage.jpeg"
+            alt="Muthmirah"
+            class="homepage-image"
+        >
+
+        <p class="contact">
+            For more information, contact
+            <a href="mailto:support@muthmirah.com">
+                support@muthmirah.com
+            </a>
+        </p>
+    </main>
+</body>
+</html>
